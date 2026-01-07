@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar com logo -->
+    <div id="inicio" class="container container-nav" data-aos="fade-down">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="logo3.png" alt="Logo">
+                    <p class="logo">NI<span>K</span>E</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#players">Jogadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#timeline">Linha do Tempo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Produtos">Linha do produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Logo">Crie sua Logo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ranking">Ranking</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Carrossel em largura total -->
+    <div class="carousel-fullwidth" data-aos="zoom-in">
+        <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active">
+                    <img src="1.jpg" class="d-block w-100" alt="Tênis Nike">
+                </div>
+                <div class="carousel-item">
+                    <img src="2.webp" class="d-block w-100" alt="Tênis Nike 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="3.webp" class="d-block w-100" alt="Tênis Nike 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Conteúdo normal em container -->
+    <div class="container" id="about">
+        <h1 class="section-title" data-aos="fade-up">Just Do It. <br> O impossível só existe até que você o faça.</h1>
+
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="card2.jpg" alt="História da Nike">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">O Início de uma Revolução</h5>
+                        <p class="card-text">Tudo começou em 1964 com uma simples pergunta: "E se?".
+                            Na garagem de Bill Bowerman, um treinador de atletas, e de Phil Knight, um corredor
+                            universitário, nasceu a Blue Ribbon Sports, movida pela paixão pelo esporte e pela busca
+                            incansável por inovação.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="card1.png" alt="Logo Nike">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">O Nascimento de um Ícone</h5>
+                        <p class="card-text">Por apenas US$ 35, a designer Carolyn Davidson criou um dos símbolos mais
+                            reconhecidos do mundo: o Swoosh. Representando as asas da deusa grega da vitória, Niké, ele
+                            encapsula movimento, velocidade e a ambição de ajudar todos os atletas a superarem seus
+                            limites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="card3.webp" alt="Campanha Nike">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Um Grito que Ecoou no Mundo</h5>
+                        <p class="card-text">Em 1988, três palavras simples mudaram tudo. A campanha "Just Do It" não
+                            era apenas sobre vender tênis; era sobre atitude, determinação e quebrar barreiras. Ela
+                            transformou a Nike de uma empresa de artigos esportivos em um símbolo cultural global de
+                            coragem e realização.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="athletes-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" style="color: var(--nike-white);">Príncipais Atletas</h2>
+            <div class="row g-4">
+                <!-- Atleta 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-easing="ease-in-out"
+                    data-aos-duration="1000">
+                    <div class="athlete-card">
+                        <div class="athlete-image">
+                            <img src="Leblon.webp" alt="Atleta Nike">
+                        </div>
+                        <div class="athlete-info">
+                            <span class="athlete-sport">Basquete</span>
+                            <h3>LeBron James</h3>
+                            <p>"A mentalidade de não desistir é o que separa os bons dos grandes."</p>
+                            <div class="athlete-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">4x</div>
+                                    <div class="stat-label">MVP da NBA</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">19x</div>
+                                    <div class="stat-label">All-Star</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">2</div>
+                                    <div class="stat-label">Ouro Olímpico</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atleta 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-easing="ease-in-out"
+                    data-aos-duration="1000" data-aos-delay="200">
+                    <div class="athlete-card">
+                        <div class="athlete-image">
+                            <img src="cr7.jpg" alt="Atleta Nike">
+                        </div>
+                        <div class="athlete-info">
+                            <span class="athlete-sport">Futebol</span>
+                            <h3>Cristiano Ronaldo</h3>
+                            <p>"O talento não significa nada sem trabalho duro e disciplina."</p>
+                            <div class="athlete-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">5x</div>
+                                    <div class="stat-label">Bola de Ouro</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">5x</div>
+                                    <div class="stat-label">Champions</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">1</div>
+                                    <div class="stat-label">Eurocopa</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atleta 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-easing="ease-in-out"
+                    data-aos-duration="1000" data-aos-delay="300">
+                    <div class="athlete-card">
+                        <div class="athlete-image">
+                            <img src="Serena.jpg" alt="Atleta Nike">
+                        </div>
+                        <div class="athlete-info">
+                            <span class="athlete-sport">Tênis</span>
+                            <h3>Serena Williams</h3>
+                            <p>"A verdadeira força não vem de vitórias físicas. Vem de uma indomável vontade."</p>
+                            <div class="athlete-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">23</div>
+                                    <div class="stat-label">Grand Slams</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">4x</div>
+                                    <div class="stat-label">Ouro Olímpico</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">319</div>
+                                    <div class="stat-label">Semanas nº1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="timeline" class="container mb-5">
+        <h1 class="text-center mb-5">Linha do Tempo da Nike</h1>
+
+        <div class="timeline">
+            <div class="timeline-item left" data-aos="fade-right">
+                <h3>1964</h3>
+                <p>Fundação da Blue Ribbon Sports por Bill Bowerman e Phil Knight, que mais tarde se tornaria a Nike.
+                </p>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <h3>1971</h3>
+                <p>O nome "Nike" é adotado, inspirado na deusa grega da vitória, e o icônico logo Swoosh é criado.</p>
+            </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <h3>1972</h3>
+                <p>Lançamento do primeiro tênis de corrida Nike, marcando a entrada oficial no mercado de calçados
+                    esportivos.</p>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <h3>1980</h3>
+                <p>IPO da Nike, tornando-se uma das empresas de artigos esportivos mais influentes do mundo.</p>
+            </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <h3>1988</h3>
+                <p>Lançamento da famosa linha de tênis Air Max, revolucionando o design de calçados esportivos.</p>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <h3>1996</h3>
+                <p>Assinatura de contrato com Michael Jordan para a linha Air Jordan, consolidando a marca no basquete.
+                </p>
+            </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <h3>2003</h3>
+                <p>Expansão global da Nike, com forte presença em roupas, tênis e acessórios esportivos.</p>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <h3>2012</h3>
+                <p>Lançamento do Nike+ FuelBand, iniciando a entrada da empresa no mercado de tecnologia wearable.</p>
+            </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <h3>2023</h3>
+                <p>Continuação da inovação em sustentabilidade e tecnologia esportiva, mantendo a Nike como líder global
+                    no setor.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="Produtos">
+        <h1 class="titletime">Linha do Tempo Nike - Evolução de Produtos</h1>
+
+        <div class="nike-timeline">
+            <div class="nike-timeline-item left" data-aos="fade-right">
+                <h3>1972</h3>
+                <p>Primeiro tênis Nike Cortez lançado.</p>
+                <img src="t1.avif" alt="Nike Cortez">
+            </div>
+            <div class="nike-timeline-item right" data-aos="fade-left">
+                <h3>1987</h3>
+                <p>Lançamento do Nike Air Max 1 com amortecimento visível.</p>
+                <img src="t2.avif" alt="Nike Air Max 1">
+            </div>
+            <div class="nike-timeline-item left" data-aos="fade-right">
+                <h3>1991</h3>
+                <p>Nike Air Jordan XI chega ao mercado revolucionando o basquete.</p>
+                <img src="t3.jpg" alt="Air Jordan XI">
+            </div>
+            <div class="nike-timeline-item right" data-aos="fade-left">
+                <h3>1995</h3>
+                <p>Nike Air Max 95 introduz design inspirado na anatomia humana.</p>
+                <img src="t4.avif" alt="Nike Air Max 95">
+            </div>
+            <div class="nike-timeline-item left" data-aos="fade-right">
+                <h3>2006</h3>
+                <p>Nike Free introduz uma experiência de corrida natural.</p>
+                <img src="t5.jpg" alt="Nike Free">
+            </div>
+            <div class="nike-timeline-item right" data-aos="fade-left">
+                <h3>2012</h3>
+                <p>Lançamento do Nike Flyknit para leveza e conforto.</p>
+                <img src="t6.webp" alt="Nike Flyknit">
+            </div>
+            <div class="nike-timeline-item left" data-aos="fade-right">
+                <h3>2016</h3>
+                <p>Lançamento do Nike HyperAdapt, tênis com cadarço automático.</p>
+                <img src="t7.avif" alt="Nike HyperAdapt">
+            </div>
+            <div class="nike-timeline-item right" data-aos="fade-left">
+                <h3>2017</h3>
+                <p>Nike Air VaporMax redefine o amortecimento de tênis com bolsas de ar completas.</p>
+                <img src="t8.jpg" alt="Nike VaporMax">
+            </div>
+            <div class="nike-timeline-item left" data-aos="fade-right">
+                <h3>2020</h3>
+                <p>Nike Space Hippie utiliza materiais reciclados em seu design sustentável.</p>
+                <img src="t9.webp" alt="Nike Space Hippie">
+            </div>
+        </div>
+
+    </section>
+    <section id="Logo" data-aos="fade-up">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Crie sua logo Nike</h2>
+            <div class="logo-area bg-white" id="logoArea">
+                <span class="nike-swoosh" id="swoosh"><img src="logo.png" alt="" width="120px"></span>
+                <span class="nike-logo" id="nikeText">NIKE</span>
+            </div>
+
+            <div class="row mt-4 g-3">
+                <div class="col-md-3 text-center">
+                    <label for="colorPicker" class="form-label">Cor da Logo</label>
+                    <input type="color" id="colorPicker" class="form-control form-control-color" value="#000000">
+                </div>
+                <div class="col-md-3 text-center">
+                    <label for="bgColorPicker" class="form-label">Cor do Fundo</label>
+                    <input type="color" id="bgColorPicker" class="form-control form-control-color" value="#ffffff">
+                </div>
+                <div class="col-md-3 text-center">
+                    <label for="sizeRange" class="form-label">Tamanho</label>
+                    <input type="range" id="sizeRange" class="form-range" min="30" max="120" value="60">
+                </div>
+                <div class="col-md-3 text-center">
+                    <label class="form-label d-block">Estilo Texto</label>
+                    <button class="btn btn-outline-dark btn-sm" id="boldBtn">Negrito</button>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-primary me-2" id="randomBtn">🎲 Aleatório</button>
+                <button class="btn btn-danger" id="resetBtn">🔄 Resetar</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5">
+            <h1 class="text-center mb-5">Ranking de Produtos Icônicos Nike</h1>
+
+            <div class="row" id="ranking" data-aos="fade-up">
+                <!-- Os produtos serão inseridos aqui via JavaScript -->
+
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer-nike text-white pt-5 pb-4" data-aos="flip-up">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a marca -->
+                <div class="col-md-4 mb-4">
+                    <h2 class="logo-footer">NI<span style="color: #000;">K</span>E</h2>
+                    <p>Eleve seu estilo e desempenho. Inspirando atletas e amantes da cultura streetwear.</p>
+                    <a href="#inicio" class="btn btn-nike mt-2">Voltar ao Início</a>
+                </div>
+
+                <!-- Links rápidos -->
+                <div class="col-md-4 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#ranking">Ranking de Produtos</a></li>
+                        <li><a href="#about">Sobre a Nike</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="">Promoções</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociais -->
+                <div class="col-md-4 mb-4">
+                    <h5>Siga-nos</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p>&copy; 2025 Nike. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <!-- Bootstrap Icons CDN (para os ícones das redes sociais) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <script>
+        // Dados do ranking
+        const produtos = [
+            { nome: "Air Jordan 1", ano: 1985, motivo: "Lançamento icônico do Michael Jordan, revolucionou o basquete e streetwear.", imagem: "rt1.avif", votos: 0 },
+            { nome: "Air Max 95", ano: 1995, motivo: "Maior, com mais salto e mais ar", imagem: "rt2.avif", votos: 0 },
+            { nome: "Air Max 90", ano: 1990, motivo: "Popularizou o amortecimento visível", imagem: "rt4.avif", votos: 0 },
+            { nome: "Air Force 1", ano: 1982, motivo: "Clássico do streetwear", imagem: "rtairf.avif", votos: 0 },
+            { nome: "Air Max Plus", ano: 1982, motivo: "Estrutura em formato de chama que adiciona calor às ruas", imagem: "Rt3.avif", votos: 0 },
+            { nome: "Air Max 97", ano: 1997, motivo: "Design futurista com amortecimento total", imagem: "Rt97.avif", votos: 0 },
+            { nome: "Dunk Low", ano: 1985, motivo: "Renascido como ícone do skate e streetwear", imagem: "Rtdunk.avif", votos: 0 },
+            { nome: "Nike Shox TL", ano: 2003, motivo: "Eleva o amortecimento mecânico a um novo patamar.", imagem: "rtshox.avif", votos: 0 },
+            { nome: "Air Max Dn", ano: 2024, motivo: "Visual clássico do basquete dos anos 80 adaptado à cultura atual", imagem: "rt5.avif", votos: 0 },
+            { nome: "Court Vision Low", ano: 2024, motivo: "Projetado para reduzir lesões e melhorar a corrida", imagem: "rtcou.avif", votos: 0 }
+        ];
+
+        const rankingContainer = document.getElementById("ranking");
+
+        // Carregar votos salvos do localStorage
+        const votosSalvos = JSON.parse(localStorage.getItem("votos")) || produtos.map(p => p.votos);
+        produtos.forEach((p, i) => p.votos = votosSalvos[i]);
+
+        // Criar cards
+        produtos.forEach((produto, index) => {
+            const card = document.createElement("div");
+            card.className = "col-md-4 mb-4";
+            card.innerHTML = `
+      <div class="card h-100 shadow-sm border-0">
+        <img src="${produto.imagem}" class="card-img-top" alt="${produto.nome}">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${produto.nome}</h5>
+          <p class="card-text"><strong>Ano:</strong> ${produto.ano}</p>
+          <p class="card-text">${produto.motivo}</p>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <button class="btn btn-primary vote-btn" onclick="votar(${index})">Votar</button>
+            <span class="vote-count" id="votos-${index}">${produto.votos}</span> votos
+          </div>
+        </div>
+      </div>
+    `;
+            rankingContainer.appendChild(card);
+        });
+
+        // Função de votação
+        function votar(index) {
+            produtos[index].votos++;
+            document.getElementById(`votos-${index}`).innerText = produtos[index].votos;
+
+            // Salvar no localStorage
+            const votosParaSalvar = produtos.map(p => p.votos);
+            localStorage.setItem("votos", JSON.stringify(votosParaSalvar));
+        }
+    </script>
+
+    <script>
+        const swoosh = document.getElementById("swoosh");
+        const nikeText = document.getElementById("nikeText");
+        const logoArea = document.getElementById("logoArea");
+        const colorPicker = document.getElementById("colorPicker");
+        const bgColorPicker = document.getElementById("bgColorPicker");
+        const sizeRange = document.getElementById("sizeRange");
+        const boldBtn = document.getElementById("boldBtn");
+        const randomBtn = document.getElementById("randomBtn");
+        const resetBtn = document.getElementById("resetBtn");
+
+        // Função para adicionar animação
+        function addAnimation(element, animationClass) {
+            element.classList.add(animationClass);
+            setTimeout(() => element.classList.remove(animationClass), 600);
+        }
+
+        // Mudar cor da logo
+        colorPicker.addEventListener("input", () => {
+            swoosh.style.color = colorPicker.value;
+            nikeText.style.color = colorPicker.value;
+            addAnimation(nikeText, "animate-pulse");
+        });
+
+        // Mudar cor do fundo
+        bgColorPicker.addEventListener("input", () => {
+            logoArea.style.backgroundColor = bgColorPicker.value;
+            addAnimation(logoArea, "animate-glow");
+        });
+
+        // Mudar tamanho da logo
+        sizeRange.addEventListener("input", () => {
+            nikeText.style.fontSize = sizeRange.value + "px";
+            swoosh.style.fontSize = (parseInt(sizeRange.value) * 2) + "px";
+            addAnimation(swoosh, "animate-bounce");
+        });
+
+        // Negrito/Normal
+        boldBtn.addEventListener("click", () => {
+            nikeText.style.fontWeight = nikeText.style.fontWeight === "900" ? "400" : "900";
+            addAnimation(nikeText, "animate-pulse");
+        });
+
+        // Resetar
+        resetBtn.addEventListener("click", () => {
+            swoosh.style.color = "#000";
+            nikeText.style.color = "#000";
+            logoArea.style.backgroundColor = "#fff";
+            sizeRange.value = 60;
+            nikeText.style.fontSize = "60px";
+            swoosh.style.fontSize = "120px";
+            nikeText.style.fontWeight = "900";
+            addAnimation(logoArea, "animate-glow");
+        });
+
+        // Aleatório
+        randomBtn.addEventListener("click", () => {
+            const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            const randomBg = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            colorPicker.value = randomColor;
+            bgColorPicker.value = randomBg;
+            swoosh.style.color = randomColor;
+            nikeText.style.color = randomColor;
+            logoArea.style.backgroundColor = randomBg;
+            const randomSize = Math.floor(Math.random() * (120 - 30) + 30);
+            sizeRange.value = randomSize;
+            nikeText.style.fontSize = randomSize + "px";
+            swoosh.style.fontSize = (randomSize * 2) + "px";
+            addAnimation(logoArea, "animate-glow");
+            addAnimation(nikeText, "animate-pulse");
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

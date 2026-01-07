@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nike</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #fff !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            color: #000 !important;
+        }
+
+        .navbar-brand p {
+            font-weight: 800;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            color: #000 !important;
+        }
+
+        .navbar-brand span {
+            color: #e4002b;
+            display: inline-block;
+            transform: scaleX(2.5);
+            transform-origin: left;
+            letter-spacing: 60px;
+        }
+
+        .container-nav {
+            max-width: 1400px;
+        }
+
+        /* Carrossel */
+        .carousel-fullwidth {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .carousel-item {
+            height: 100%;
+        }
+
+        .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* Cards de História */
+        .card {
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+            overflow: hidden;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+
+        .card-img-top img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .card-img-top img {
+            transform: scale(1.05);
+        }
+
+        .container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            max-width: 1400px;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #000, #e4002b);
+        }
+
+        /* Atletas */
+        .athletes-section {
+            color: var(--nike-white);
+            padding: 4rem 0;
+        }
+
+        .athlete-card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .athlete-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(228, 0, 43, 0.2);
+        }
+
+        .athlete-image {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .athlete-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .athlete-card:hover .athlete-image img {
+            transform: scale(1.1);
+        }
+
+        .athlete-info {
+            padding: 1.5rem;
+        }
+
+        .athlete-sport {
+            color: #e4002b;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .athlete-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-fullwidth {
+                height: 400px;
+            }
+
+            .card-img-top {
+                height: 180px;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container container-nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary row">
+            <div class="container-fluid">
+                <div class="navbar-brand d-flex align-items-center gap-2">
+                    <img src="logo.png" alt="" style="height: 40px;">
+                    <p class="logo m-0">NI<span>K</span>E</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Carrossel -->
+    <div class="carousel-fullwidth" data-aos="zoom-in">
+        <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active">
+                    <img src="1.jpg" class="d-block w-100" alt="Tênis Nike">
+                </div>
+                <div class="carousel-item">
+                    <img src="2.webp" class="d-block w-100" alt="Tênis Nike 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="3.webp" class="d-block w-100" alt="Tênis Nike 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- História -->
+    <div class="container">
+        <h1 class="section-title" data-aos="fade-up">Just Do It. <br> O impossível só existe até que você o faça.</h1>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <div class="card-img-top"><img src="card2.jpg" alt="História da Nike"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">O Início de uma Revolução</h5>
+                        <p class="card-text">Tudo começou em 1964 com uma simples pergunta: "E se?"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <div class="card-img-top"><img src="card1.png" alt="Logo Nike"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">O Nascimento de um Ícone</h5>
+                        <p class="card-text">Por apenas US$ 35, a designer Carolyn Davidson criou o Swoosh.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <div class="card-img-top"><img src="card3.webp" alt="Campanha Nike"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Um Grito que Ecoou no Mundo</h5>
+                        <p class="card-text">Em 1988, três palavras mudaram tudo: "Just Do It".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Atletas -->
+    <section class="athletes-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Príncipais Atletas</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="athlete-card">
+                        <div class="athlete-image"><img src="Leblon.webp" alt="Atleta Nike"></div>
+                        <div class="athlete-info">
+                            <span class="athlete-sport">Basquete</span>
+                            <h3>LeBron James</h3>
+                            <p>"A mentalidade de não desistir é o que separa os bons dos grandes."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="athlete-card">
+                        <div class="athlete-image"><img src="cr7.jpg" alt="Atleta Nike"></div>
+                        <div class="athlete-info">
+                            <span class="athlete-sport">Futebol</span>
+                            <h3>Cristiano Ronaldo</h3>
+                            <p>"O talento não significa nada sem trabalho duro e disciplina."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="athlete-card">
+                        <div class="athlete-image"><img src="Serena.jpg" alt="Atleta Nike"></div>
+                        <div class="athlete-info">
+                            <span class="athlete-sport">Tênis</span>
+                            <h3>Serena Williams</h3>
+                            <p>"A verdadeira força não vem de vitórias físicas. Vem de uma indomável vontade."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

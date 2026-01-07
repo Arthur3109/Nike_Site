@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item.left {
+            left: 0;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #3498db;
+            border-radius: 50%;
+            top: 20px;
+            right: -10px;
+        }
+
+        .timeline-item.right::after {
+            left: -10px;
+        }
+
+        .timeline-item h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .timeline-item p {
+            margin: 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="timeline">
+        <div class="timeline-item left">
+            <h3>2020</h3>
+            <p>Início do projeto.</p>
+        </div>
+        <div class="timeline-item right">
+            <h3>2021</h3>
+            <p>Primeira versão lançada.</p>
+        </div>
+        <div class="timeline-item left">
+            <h3>2022</h3>
+            <p>Atualização com novos recursos.</p>
+        </div>
+        <div class="timeline-item right">
+            <h3>2023</h3>
+            <p>Expansão internacional.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
